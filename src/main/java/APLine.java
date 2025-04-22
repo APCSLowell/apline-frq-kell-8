@@ -7,10 +7,10 @@ public class APLine
     c = cval;
   }
   public double getSlope(){
-    return (a * -1)/(double)b;
+    return (a * -1)/((double)b);
   }
   public boolean isOnline(int x, int y){
-    if (a * x + b*y +c == 0){
+    if (((a * x) + (b*y) +c) == 0){
       return true;
     }
     return false;
